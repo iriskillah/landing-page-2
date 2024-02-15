@@ -1,0 +1,130 @@
+:root {
+    --softLight: hsla(0, 0%, 94.1%, 1);
+    --light: #fff;
+    --bg-dark: #000;
+    --bg-grey: #E5E7EB;
+    --grey: #4e4e4e;
+    --fontSize-1: 1rem;
+    --fontSize-2: 1.5rem;
+    --fontSize-3: 1.75rem;
+    --fontSize-4: 2rem;
+    --fontSize-5: 2.5rem;
+    --fontSize-6: 3rem;
+    --fontWeight-1: 200;
+    --fontWeight-2: 400;
+    --fontWeight-3: 600;
+    --gap-1: 15px;
+    --gap-2: 30px;
+    --gap-3: 45px;
+    --gap-4: 60px;
+    --gap-5: 90px;
+    --gap-6: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-grey);
+}
+
+/* SECTION 1 */
+
+.section-1 {
+    background-color: var(--bg-dark);
+    padding-block: 40px 60px ;
+    padding-inline: 50px;
+    border-bottom: 2px solid var(--grey);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    max-width: 1080px;
+    min-width: 986px;
+    margin: auto;
+}
+
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 700;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: var(--fontSize-2);
+    font-weight: var(--fontWeight-3);
+    color: var(--light);
+}
+
+.header-menu {
+    display: flex;
+    gap: var(--gap-1);
+}
+
+ul.header-menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+a:hover{
+    color: var(--grey);
+}
+
+li.header-menu-item {
+    font-size: var(--fontSize-2);
+    font-weight: var(--fontWeight-3);
+}
+
+.content {
+    margin-top: var(--gap-5);
+    margin-bottom: var(--gap-2);
+    min-width: 300px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-3);
+}
+
+.content-1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--gap-1);
+    color:var(--light);
+}
+
+.content-header {
+    font-size: var(--fontSize-6);
+    font-weight: var(--fontWeight-3);
+}
+
+.section-1 p {
+    font-size: var(--fontSize-2);
+    font-weight: var(--fontWeight-2);
+}
+
+/* SECTION 2 */
+
+.section-2 {
+/* padding */
+}
+
